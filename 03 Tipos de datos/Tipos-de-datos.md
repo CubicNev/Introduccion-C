@@ -1,6 +1,6 @@
 # Tipos de datos en C
 
-C es un lenguaje de programación tipado, es decir, tienes que declarar de qué tipo de dato es una variable.
+C es un lenguaje de programación tipado, es decir, tienes que **declarar de qué tipo de dato es una variable**.
 
 ## Tipos de datos básicos
 
@@ -24,7 +24,18 @@ Estos sirven para almacenar información aritmetica, se tienen de tipo:
 
 > 📝 **Nota:** En C siempre debes pensar en los valores que va a tomar una variable, es una de las buenas prácticas, se calculan los valores mínimo y los valores máximos.
 
-### El tipo de dato `void`
+### El tipo de dato `char`
+
+El tipo de datos `char` se usa para guardar caracteres como `a`, `b`, `c`, etc.
+
+| Tipo | Tamaño | Rango de valores |
+| --- | --- | --- |
+| `char` | **1 byte** | $-128$ a $127$ |
+| `usigned char` | **1 byte** | $0$ a $255$ |
+
+Permite guardar 256 datos.
+
+## El tipo de dato `void`
 
 Especifica que no hay valor disponible, se usa en 3 escenarios:
 
@@ -46,11 +57,71 @@ Especifica que no hay valor disponible, se usa en 3 escenarios:
    void ptr*;
    ```
 
-### Tipo de dato `enum`
+## Tipo de dato `enum`
 
-Es una especie de lista, permite guardar tipos de datos constantes.
+Es una especie de lista, permite guardar datos coon vlaores constanates constantes. Algunos casos de uso son:
+
+- Guardar días de la semana: `Lunes`, `Martes`, `Miércoles`, etc.
+- En un juego de cartas, guardar cartas como: `Tipo de carta`, `Tipo de ataque`.
+
+La variables dentro de un enum solo pueden tener un valor, y también pueden tener variables.
+
+**Enumeration** (o `enum`) es un tipo de dato definido por el usuario (*user defined data type*) [3]. Principalmente es usado para nombrar constantes de tipo `int`, haciendo que un programa sea fácil de mantener/leer.
+
+### Ejemplo
+
+Se declara siguiendo la siguiente sintaxis:
+> `enum` **nombreVariable** `{lista de constantes separadas por comas};`.
+
+Podemos ver algunos ejemplos a continuación:
+
+```c
+enum designElements {
+    ITALICS = 1,
+    BOLD = 2,
+    STRIKE = 3,
+};
+
+enum weekDays {Sun, Mon, Tue Web, Thu, Fri, Sat};
+```
+
+Los enums se pueden usar como valiables, para esto tenemos dos opciones:
+
+```c
+// 1
+enum week{Mon, Tue, Wed};
+enum week day;
+// 2
+enum week{Mon, Tue, Wed}day;
+```
+
+Enum indexa automatomaticamente los valores, comenzando por el 0, como un arreglo.
+
+```c
+#include<stdio.h>
+
+enum week{Mon, Tue, Wed, Thur, Fri, Sat, Sun};
+
+int main()
+{
+    enum week day;
+    day = Wed;
+    printf("%d",day);
+    return 0;
+}
+```
+
+> **Salida:** 2
+
+Algunos ejemplos de uso se pueden ver en el archivo [`02-enums.c`](./02-enums.c). Para correrlo usa el siguiente comando (Ubuntu)
+
+```sh
+gcc -o enums 02-enums.c
+./enums
+```
 
 <!-- Referencias -->
 
 [1]: <https://www.geeksforgeeks.org/c-long/> "Long en C"
 [2]: <https://es.science19.com/what-is-e10-11567#google_vignette> "Notación Citntifíca"
+[3]: <https://www.geeksforgeeks.org/enumeration-enum-c/> "Enumeration"
