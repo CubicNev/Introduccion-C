@@ -29,7 +29,7 @@ Estos sirven para almacenar información aritmetica, se tienen de tipo:
 El tipo de datos `char` se usa para guardar caracteres como `a`, `b`, `c`, etc.
 
 | Tipo | Tamaño | Rango de valores |
-| --- | --- | --- |
+| :--- | :---: | ---: |
 | `char` | **1 byte** | $-128$ a $127$ |
 | `usigned char` | **1 byte** | $0$ a $255$ |
 

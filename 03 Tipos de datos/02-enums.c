@@ -14,7 +14,7 @@ enum designElements {
 
 enum weekDays {Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday};
 
-// enum with instatatin
+// enum with instatiation
 enum deck {
     club = 0,
     diamonds = 5,
