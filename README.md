@@ -10,10 +10,9 @@ Conceptos básicos de lenguaje de programación C.
     3. [¿Por qué aprender C?](./01%20Introducción/Que-es-C.md)
     4. [Instalación](./01%20Introducción/Que-es-C.md#instalación)
 2. [Estructura de un programa C](./02%20Estructura%20de%20un%20programa%20C/Estructura-de-un-programa-C.md)
-3. [Tipos de datos](./03%20Tipos%20de%20datos/)
-    1. [Solicitudes HTTP con Requests](./)
-4. [Variables](./)
-    1. [¿Qué es Docker?](./)
+3. [Tipos de datos](./03%20Tipos%20de%20datos/Tipos-de-datos.md)
+4. [Variables](./04%20Variables%20en%20C/Variables-en-c.md)
+5. [Toma de decisiones](./05%20Toma%20de%20decisiones/Estructuras-de-decision.md)
 
 ## Requeriments
 
