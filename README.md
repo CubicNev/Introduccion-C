@@ -13,6 +13,7 @@ Conceptos básicos de lenguaje de programación C.
 3. [Tipos de datos](./03%20Tipos%20de%20datos/Tipos-de-datos.md)
 4. [Variables](./04%20Variables%20en%20C/Variables-en-c.md)
 5. [Toma de decisiones](./05%20Toma%20de%20decisiones/Estructuras-de-decision.md)
+6. [Bucles](./06%20Bucles/bucles.md)
 
 ## Requeriments
 
