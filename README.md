@@ -15,12 +15,14 @@ Conceptos básicos de lenguaje de programación C.
 5. [Toma de decisiones](./05%20Toma%20de%20decisiones/Estructuras-de-decision.md)
 6. [Bucles](./06%20Bucles/bucles.md)
 7. [Control de flujo](./07%20Control%20de%20flujo/control-de-flujo.md)
+8. [Funciones](./08%20Funciones/Funciones.md)
+9. [Bibliotecas estándar de funciones](./09%20Bibliotecas/bibliotecas.md)
 
 ## Requeriments
 
 ### SO
 
-Este proyecto curso se realizo en **WSL** con core **Ubuntu 22 LTS**, puede ejecutarse en **MacOS**.
+Este proyecto/curso se realizo en **WSL** con core **Ubuntu 22 LTS**, puede ejecutarse en **MacOS**.
 
 ### Some places to practice
 

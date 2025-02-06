@@ -47,6 +47,7 @@ Un caso de uso donde puede ser útil es el siguiente:
 
 ```c
 int i, j, k;
+// Muchos for anidados
 for (i = 0; i < 10; i++) {
     for (j = 0; j < i; j++) {
         for (k = 0; k < j; k++) {
